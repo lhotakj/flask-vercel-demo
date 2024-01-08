@@ -39,3 +39,4 @@ Open a browser and go to URL
 
 ## Credits
 https://github.com/harshan1996/flask-vercel/blob/main/backend/views.py
+https://vercel.com/docs/functions/serverless-functions/runtimes/python

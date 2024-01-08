@@ -13,5 +13,16 @@ def root():
 @App.route("/heartbeat", methods=["GET"])
 def heartbeat():
     if request.method == "GET":
-        start: str = str(app.config["start"])
-        return f"OK<br>{start}"
+        start = app.config["start"]
+
+        import datetime
+        data2 = datetime.datetime.now()
+
+        diff = data2 - start
+
+        days, seconds = diff.days, diff.seconds
+        hours = days * 24 + seconds // 3600
+        minutes = (seconds % 3600) // 60
+        seconds = seconds % 60
+
+        return f"OK<br><u>uptime</u>: {days} days, {hours} hours, {minutes}, minutes, {seconds} seconds"
