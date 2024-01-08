@@ -1,7 +1,6 @@
 import Cors
 import os
-
-# import views
+import views
 
 app = Cors.App
 
