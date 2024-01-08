@@ -1,12 +1,13 @@
 # Simple Web Application running on Vercel
 
-This is a simple web application using [Python Flask](http://flask.pocoo.org/)e. 
-  
+This is a simple web application using [Python Flask](http://flask.pocoo.org/) and hosted on Vercel
+see https://flask.lhotak.net/
+ 
   Below are the steps required to get this working on a base linux system.
   
   - Install Python3
   - Install and Configure Web Server
-  - Start Web Server
+  - Setup Vercel
    
 ## 1. Install Python 3
   
@@ -35,3 +36,6 @@ Open a browser and go to URL
 
     http://<IP>:5000/                           => Hello world
     http://<IP>:5000/heartbeat                  => ok
+
+## Credits
+https://github.com/harshan1996/flask-vercel/blob/main/backend/views.py

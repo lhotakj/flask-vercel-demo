@@ -1,6 +1,8 @@
 from Cors import App
 from flask import request
+from flask import current_app as app
 import os
+
 
 @App.route("/", methods=["GET"])
 def root():
@@ -11,4 +13,5 @@ def root():
 @App.route("/heartbeat", methods=["GET"])
 def heartbeat():
     if request.method == "GET":
-        return "OK"
+        start: str = str(app.config['start'])
+        return f"OK {start}"
