@@ -23,4 +23,4 @@ def heartbeat():
         minutes = (seconds % 3600) // 60
         seconds = seconds % 60
 
-        return f"OK<br><u>uptime</u>: {days} days, {hours} hours, {minutes}, minutes, {seconds} seconds"
+        return f"<h1>OK</h1><br><u>uptime</u>: {days} days, {hours} hours, {minutes}, minutes, {seconds} seconds"
