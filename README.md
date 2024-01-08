@@ -2,6 +2,7 @@
 
 This is a simple web application using [Python Flask](http://flask.pocoo.org/) and hosted on Vercel
 see https://flask.lhotak.net/
+and https://flask.lhotak.net/heartbeat
  
   Below are the steps required to get this working on a base linux system.
   
