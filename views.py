@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from Cors import App
 from flask import request
 from flask import current_app as app
@@ -14,12 +16,8 @@ def root():
 def heartbeat():
     if request.method == "GET":
         start = app.config["start"]
-
-        import datetime
-        data2 = datetime.datetime.now()
-
-        diff = data2 - start
-
+        now = datetime.now()
+        diff = now - start
         days, seconds = diff.days, diff.seconds
         hours = days * 24 + seconds // 3600
         minutes = (seconds % 3600) // 60
