@@ -13,5 +13,5 @@ def root():
 @App.route("/heartbeat", methods=["GET"])
 def heartbeat():
     if request.method == "GET":
-        start: str = str(app.config)
-        return f"OK {start}"
+        start: str = str(app.config["start"])
+        return f"OK<br>{start}"
