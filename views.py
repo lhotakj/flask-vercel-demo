@@ -1,13 +1,13 @@
 from Cors import App
 from flask import request
 from flask import current_app as app
-import os
+import sys
 
 
 @App.route("/", methods=["GET"])
 def root():
     if request.method == "GET":
-        return f"<h1>Hello world!</h1><br />Running on {os.name}"
+        return f"<h1>Hello world!</h1><br />Running on {sys.version}"
 
 
 @App.route("/heartbeat", methods=["GET"])
