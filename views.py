@@ -1,10 +1,12 @@
 from Cors import App
 from flask import request
+import os
 
 @App.route("/", methods=["GET"])
-def heartbeat():
+def root():
     if request.method == "GET":
-        return "Hello world!"
+        return f"<h1>Hello world!</h1><br />Running on {os.name}"
+
 
 @App.route("/heartbeat", methods=["GET"])
 def heartbeat():
