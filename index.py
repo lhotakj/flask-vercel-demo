@@ -2,8 +2,6 @@ import datetime
 
 import Cors
 import os
-import time
-import views
 
 app = Cors.App
 app.config["start"] = datetime.datetime.now()
