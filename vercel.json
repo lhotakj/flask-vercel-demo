@@ -17,18 +17,15 @@
             "dest": "/"
         }
     ],
-    "headers": [
+  "headers": [
     {
       "source": "*",
       "headers": [
         {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        },
-        {
           "key": "X-Application",
-          "value": "test"
+          "value": "flask-vercel-demo"
         }
       ]
-    },
+    }
+  ]
 }
