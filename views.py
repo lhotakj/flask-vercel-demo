@@ -1,13 +1,16 @@
-from datetime import datetime
-
-from Cors import App
-from flask import request
-from flask import current_app as app
 import sys
+from datetime import datetime
+from flask import current_app as app
+from flask import request
+from Cors import App
 
 
 @App.route("/", methods=["GET"])
-def root():
+def root() -> str:
+    """
+    Returns string for /
+    @return: string
+    """
     if request.method == "GET":
         return f"<h1>Hello from Vercel!</h1>" \
                f"<img src='/static/img/logo_vercel.png' style='width:200px' /><br>" \
