@@ -19,15 +19,4 @@
       "dest": "/"
     }
   ],
-  "headers": [
-    {
-      "source": "*",
-      "headers": [
-        {
-          "key": "X-Application",
-          "value": "vercel"
-        }
-      ]
-    }
-  ]
 }
