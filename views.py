@@ -9,7 +9,9 @@ import sys
 @App.route("/", methods=["GET"])
 def root():
     if request.method == "GET":
-        return f"<h1>Hello world!</h1><br />Running on {sys.version}"
+        return f"<h1>Hello world!</h1>" \
+               f"<img src='/static/img/logo_vercel.png' style='width:20px' /><br>" \
+               f"<br />Running on {sys.version}"
 
 
 @App.route("/heartbeat", methods=["GET"])

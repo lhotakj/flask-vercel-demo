@@ -13,6 +13,11 @@ Demo can be seen at https://flask.lhotak.net/ and https://flask.lhotak.net/heart
   * Vercel Blob: Large file storage
   * Vercel Edge Config: Global, low-latency data store 
 * But it's free, so why not to try it out? 
+
+## Flask
+https://whitenoise.readthedocs.io/en/latest/ - https://stackoverflow.com/questions/76448391/static-files-wont-load-when-using-vercel
+
+
    
 ## 1. Install Python 3
   
