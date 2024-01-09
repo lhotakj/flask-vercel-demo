@@ -25,6 +25,10 @@
     {
       "src": "/(.*)",
       "dest": "/"
+    },
+    {
+            "src": "/app/static/(.*)",
+            "dest": "/static/$1"
     }
   ]
 }
