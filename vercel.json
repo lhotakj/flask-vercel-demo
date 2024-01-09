@@ -1,5 +1,10 @@
 {
     "version": 2,
+    "regions": ["fra1"],
+    "env": {
+        "environment": "VERCEL",
+        "redis": "localhost"
+    },
     "builds": [
         {
             "src": "./index.py",
@@ -11,5 +16,19 @@
             "src": "/(.*)",
             "dest": "/"
         }
-    ]
+    ],
+    "headers": [
+    {
+      "source": "*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        },
+        {
+          "key": "X-Application",
+          "value": "test"
+        }
+      ]
+    },
 }
