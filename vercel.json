@@ -7,6 +7,12 @@
     "environment": "VERCEL",
     "redis": "localhost"
   },
+  "builds": [
+    {
+      "src": "./index.py",
+      "use": "@vercel/python"
+    }
+  ],
   "routes": [
     {
       "src": "/(.*)",
