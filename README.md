@@ -5,9 +5,9 @@ Demo can be seen at https://flask.lhotak.net/ and https://flask.lhotak.net/heart
 
 ## Preamble 
 * If you want to use Vercel for hosting your production using a [hobby plan](https://vercel.com/docs/accounts/plans/hobby) be aware of certain limitations.
-* Vercel currently supports (only) [Python 3.9.](https://www.python.org/downloads/release/python-390/) released back in 2020 see [doc](https://vercel.com/docs/functions/serverless-functions/runtimes/python)
+* Vercel currently supports (only) [Python 3.9](https://www.python.org/downloads/release/python-390/) released back in 2020 see [doc](https://vercel.com/docs/functions/serverless-functions/runtimes/python)
 * Vercel Serverless Functions is primarily built for Type Script web apps, don't expect much Python support
-* In addition to the serverless functions you can use a couple of serverless storage products: 
+* In addition to the serverless functions Vercel platform a couple of serverless storage products: 
   * Vercel KV: Durable Redis - preferred option of key-value data
   * Vercel Postgres: Serverless SQL - preferred option when relation database is required  
   * Vercel Blob: Large file storage
