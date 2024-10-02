@@ -2,10 +2,9 @@ import sys
 from datetime import datetime
 from flask import current_app as app
 from flask import request
-from Cors import App
 
 
-@App.route("/", methods=["GET"])
+@app.route("/", methods=["GET"])
 def root() -> str:
     """
     Returns string for /
@@ -17,7 +16,7 @@ def root() -> str:
                f"<br />Running on {sys.version}"
 
 
-@App.route("/heartbeat", methods=["GET"])
+@app.route("/heartbeat", methods=["GET"])
 def heartbeat():
     if request.method == "GET":
         start = app.config["start"]
